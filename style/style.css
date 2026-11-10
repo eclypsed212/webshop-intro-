@@ -19,20 +19,23 @@
 }
 
 .featured{
-    display: flex;
-
- 
-}
-.featured_text{
-    
-}
-
-.drow-ranger{
-    
-}
-.frog{
+    padding: 40px;
 
 }
-.hoodie{
-    
+.products-container{
+    display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+  
+}
+.product-card{
+    width:280px;
+    background-color: #202026;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.product-card img{
+    width: 100px;
+    height:280px;
+    object-fit: contain;
 }

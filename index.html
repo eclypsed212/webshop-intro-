@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css">
     <title>Dota SHOP</title>
   </head>
 
@@ -10,7 +11,7 @@
     <header class="header">
       <h1 class="head-text">Dota SHOP</h1>
       <nav class="navigation">
-        <ul class="">
+        <ul class="nav-list">
           <li class="style_home"><a href="">Home</a></li>
           <li class="style_shop"><a href="">Shop</a></li>
           <li class="style_collection"><a href="">Collection</a></li>
@@ -28,20 +29,71 @@
           <button class="search" type="submit">Search</button>
         </form>
         <a class="" href="basket.html">
-          <img class="basket" src="./icons/index1/shopping-cart.svg" alt = "icon of basket" />
+          <img
+            class="basket"
+            src="./icons/index1/shopping-cart.svg"
+            alt="icon of basket"
+          />
         </a>
         <a class="" href="user.html">
-          <img class="account" src="./icons/index1/user.svg" alt = "icon of account icon "/>
+          <img
+            class="account"
+            src="./icons/index1/user.svg"
+            alt="icon of account icon "
+          />
         </a>
       </div>
     </header>
-    <main class = "main">
-        <section class = "main_div">
-            <img class = "wallpaper-image" src= "./images/main_walpaper.png" alt = "wallpaper-image">
-        </section>
+    <main class="main">
+      <section class="hero">
+        <div class="hero-content">
+          <h2 class="content-text">Dota 2 Collectibles & Accessories</h2>
+          <p>
+            Discover figures, clothing and accessories from your favorite Dota 2
+            heroes
+          </p>
+          <button class = "shop-button" type="button">Shop Now</button>
+        </div>
+        <div class="hero-image">
+          <img src="./images/main_walpaper.png" alt="wallpaper-image" />
+        </div>
+      </section>
+      <section class = "categories"> 
+        <div class = "figures">
+            <img src = "./icons/index1/figur.svg" alt = "icon of figures">
+        </div>
+        <div class = "accessories">
+            <img src = "./icons/index1/accessories.svg" alt = "icon of accessories">
+
+        </div>
+        <div class = "clothing">
+            <img src = "./icons/index1/clothing.svg" alt = "icon of clothing">
+
+        </div>
+      </section>
+      <section class = "featured">
+        <h1 class = "featured_text">Featured Items</h1>
+        <div class = "products-container">
+            <article class="products-card drow-ranger">
+                <img src="./images/drow_ranger.png" alt="drow-ranger">
+                <div class="products-info">
+                    <h3>Drow Ranger Figure</h3>
+                    <p>Premium collectible figure</p>
+                    <p class = "price">€249,99</p>
+                    <button type = "button">Add to Cart </button>
+                </div>
+            </article>
+            <article class="products-card frog">
+                <img src="./images/frog.png" alt="frog">
+            </article>
+            <article class="products-card hoodie ">
+                <img src="./images/hoodie.jpg" alt="hoodie">    
+            </article>
+        </div>
+        
+        
+      </section>
     </main>
-    <footer class="footer">
-      
-    </footer>
+    <footer class="footer"></footer>
   </body>
 </html>

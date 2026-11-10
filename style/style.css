@@ -1,7 +1,38 @@
+
 .header{
-    display:flex;
+    display: flex;
+    gap:20px;
+    background-color: red;
     
 }
-.head-text{
+.nav-list{
+    display: flex;
+    gap:40px
+}
+.nav-list{
+    padding-top: 15px;
+}
+.header-actions{
+    display:flex;
+    padding-top: 30px;
+    gap:50px
+}
+
+.featured{
+    display: flex;
+
+ 
+}
+.featured_text{
+    
+}
+
+.drow-ranger{
+    
+}
+.frog{
+
+}
+.hoodie{
     
 }

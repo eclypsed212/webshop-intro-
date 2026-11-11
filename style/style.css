@@ -1,13 +1,46 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
-
-.head-text{
-    color:white;
-    font-family: Inter, bold;
-    padding-left: 20px;
+* {
+    box-sizing: border-box;
 }
+html, body{
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+
+body{
+    background-color: #101014;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.basket{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    padding-right: 10px;
+ 
+
+
+}
+.account{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    padding-right: 10px;
+     
+}
+
+.head-text a{
+    color:white;
+    font-family: 'Inter', sans-serif;
+    font: weight 700;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
 
 
 .header{
@@ -32,6 +65,7 @@
     color:white;
     text-decoration: none;
     font-family: 'Inter';
+    font-weight: 800;
 }
 
 .header-actions{
@@ -41,32 +75,109 @@
     
 }
 
+.hero{
+    position: relative;
+    height: 310px;
+    overflow:hidden;
+    background-color: #151519;
+
+}
+.hero-image{
+    width: 100%;
+    height: 100%;
+
+}
+.hero-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+}
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    transform: translateY(-50%);
+    z-index: 2;
+    max-width: 480px;
+    color:white
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    inset:0;
+    background: linear-gradient(90deg,rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.45) 45%, transparent 80%);
+    z-index: 1;
+    pointer-events: none;
+}
+.hero-content h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0 0 15px;
+}
+.hero-content p{
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 22px;
+}
 
 
 .featured{
     padding: 40px;
 
 }
-.product-card{
+.products-card{
     width:280px;
-    background-color: #24242b;
+    background-color: white;
     border-radius: 12px;
-    padding: 15px;
+    
+    overflow:hidden;
+    
 }
+.products-card img{
+    padding-top: 20px ;
+    display: block;
+    width: 100%;
+    height:280px;
+    object-fit: contain;
+}
+
 .products-container{
     display:flex;
     gap:20px;
     flex-wrap: wrap;
   
 }
-.product-card{
-    width:280px;
-    background-color: #202026;
-    border-radius: 12px;
-    overflow: hidden;
+
+
+
+
+.products-info h3{
+    color:black;
+    font-family: 'Inter', sans-serif;
+    padding-left: 15px
+    
 }
-.product-card img{
-    width: 100px;
-    height:280px;
-    object-fit: contain;
+
+.products-info p{
+    color:black;
+    font-family: 'Inter', sans-serif;
+    padding-left: 10px;
+
 }
+
+.featured{
+    background-color: #24242b;
+}
+
+.featured h2{
+    font-family: 'Inter', sans-serif;
+    color: white;
+
+}
+

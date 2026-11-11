@@ -1,26 +1,57 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+.head-text{
+    color:white;
+    font-family: Inter, bold;
+    padding-left: 20px;
+}
+
+
 .header{
     display: flex;
-    gap:20px;
-    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px 40px;
+    background-color: #151519;
     
 }
 .nav-list{
-    display: flex;
-    gap:40px
-}
-.nav-list{
     padding-top: 15px;
+    display: flex;
+    gap:40px;
+    list-style: none;
+    padding: 0;
+    margin:0;
+    
 }
+
+.nav-list a{
+    color:white;
+    text-decoration: none;
+    font-family: 'Inter';
+}
+
 .header-actions{
-    display:flex;
-    padding-top: 30px;
-    gap:50px
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
 }
+
+
 
 .featured{
     padding: 40px;
 
+}
+.product-card{
+    width:280px;
+    background-color: #24242b;
+    border-radius: 12px;
+    padding: 15px;
 }
 .products-container{
     display:flex;

@@ -75,6 +75,7 @@ body{
     
 }
 
+
 .shop-button{
     display: inline-flex;
     align-items: center;
@@ -271,6 +272,15 @@ body{
     font-size: 20px;
     font-weight:700;
 
+}
+.products-link{
+    text-decoration: none;
+    color:inherit;
+
+}
+
+.products-link:hover h3{
+    color:#c92d32;
 }
 
 .featured{

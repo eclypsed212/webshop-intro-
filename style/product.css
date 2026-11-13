@@ -43,12 +43,19 @@
     font-weight: 700;
 }
 .product-price {
-    font-size
+    font-size:30px;
+    font-weight: 700;
+    margin: 20px 0;
 }
 .product-description {
+    color: ;
 }
 .product-stock {
     color:green;
 }
 .product-extra {
+}
+
+.order-button{
+
 }

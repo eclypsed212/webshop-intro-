@@ -76,6 +76,52 @@ body{
 }
 
 
+.search-form{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    width:320px;
+    padding: 5px;
+    background-color: #101014;
+    border: 1px solid #393940;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.search_field{
+    flex:1;
+    min-width: 0;
+    padding: 10px 12px;
+    background-color: transparent;
+    border:none;
+    outline: none;
+}
+.search{
+    padding: 10px 16px;
+    background-color: #c92d32;
+    color:white;
+    border:none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+.search:hover{
+    background-color: #e43c42;
+}
+.search-form:focus-within{
+    border-color: #c92d32
+
+}
+@media(max-width:900px){
+    .search-form{
+        width:240px;
+    }
+}
+
+
 .shop-button{
     display: inline-flex;
     align-items: center;
@@ -332,6 +378,8 @@ footer {
     display: flex;
     gap:15px;
 }
+
+
 
 .footer-social a {
     display: inline-flex;

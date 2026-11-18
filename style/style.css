@@ -229,6 +229,7 @@ body{
     display: flex;
     flex-direction: column;
     
+    
 }
 .products-info {
     display: flex;
@@ -287,6 +288,7 @@ body{
     padding: 25px 40px;
     background-color: #101014;
 }
+
 
 .categories > div {
     display: flex;
@@ -347,6 +349,13 @@ body{
 
 .products-link:hover h3{
     color:#c92d32;
+}
+.products-card{
+    transition: transform 0.3s ease;
+
+}
+.products-card:hover{
+    transform: scale(1.05);
 }
 
 .featured{

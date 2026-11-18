@@ -4,7 +4,7 @@
     gap: 25px;
 }
 
-.shop-page . .products-container1 {
+.shop-page .products-container1 {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 25px;
@@ -17,4 +17,8 @@
     transform: translateY(-8px);
     border-color: #c92d32;
 
+}
+.shop-page .section_1 h2{
+    padding-left: 45px;
+    font-size: 36px;
 }

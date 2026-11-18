@@ -33,6 +33,26 @@ body{
      
 }
 
+.basket,
+.account{
+    width:24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    cursor:pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.basket:hover{
+    transform: scale(1.2);
+    filter: brightness(0) saturate(100%) invert(25%) sepia(85%) saturate(1800%) hue-rotate(340deg);
+}
+
+.account:hover{
+    transform: scale(1.2);
+    filter: brightness(0) saturate(100%) invert(25%) sepia(85%) saturate(1800%) hue-rotate(340deg);
+    
+}
+
 .head-text a{
     color:white;
     font-family: 'Inter', sans-serif;
@@ -410,3 +430,5 @@ footer {
         padding:40px 20px 20px;
     }
 }
+
+

@@ -62,3 +62,53 @@
 .collection-info {
     padding: 25px;
 }
+.collection-info h2{
+    font-size:24px;
+    margin-bottom:15px;
+}
+.collection-info p{
+    color:#a3a3ad;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.collection-info a{
+    display: inline-block;
+    background-color: #c92d32;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+
+}
+.collection-info a:hover{
+    background-color: #e43c42;
+}
+
+@media(max-width: 900px){
+    .collection-grid{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+}
+@media (max-width: 600px){
+    .collection-grid{
+        grid-template-columns: 1fr;
+    }
+    .collection-hero h1{
+        font-size: 34px;
+
+    }
+    .collection-section{
+        padding: 30px 20px 40px;
+
+    }
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}

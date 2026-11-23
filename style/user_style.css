@@ -1,0 +1,42 @@
+.account-section{
+    width:100%;
+    max-width: 420px;
+    margin:100px auto;
+    padding: 35px;
+    background-color: #24242b;
+    border: 1px solid #393940;
+    border-radius: 12px;
+}
+.account-section h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.account-section form{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.account-section label{
+    color: white;
+    font-size:14px;
+}
+.account-section input{
+    padding: 12px;
+    background-color: #151519;
+    color: white;
+    border:1px solid #393940;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.account-section button{
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #c92d32;
+    color: white;
+    border-radius: 6px;
+    border:none;
+    cursor: pointer;
+    transition: 0.3s;
+
+}

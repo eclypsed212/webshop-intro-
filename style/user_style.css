@@ -29,6 +29,10 @@
     border-radius: 6px;
     font-size: 14px;
 }
+.account-section input:focus{
+    outline: none;
+    border-color: #c92d32;
+}
 .account-section button{
     margin-top: 15px;
     padding: 12px;
@@ -39,4 +43,25 @@
     cursor: pointer;
     transition: 0.3s;
 
+}
+.account-section button:hover{
+    background-color: #a92328;
+}
+
+.account-section[hidden]{
+    display: none;
+}
+.account-switch{
+    margin-top: 25px;
+    color: #a3a3ad;
+    text-align: center;
+    font-size:14px;
+}
+.account-switch a{
+    color: #c92d32;
+    text-decoration: none;
+    font-weight: 600;
+}
+.account-switch a:hover{
+    text-decoration: underline;
 }

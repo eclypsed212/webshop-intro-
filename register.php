@@ -8,10 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
     $password = $_POST["password"] ?? "";
     $confirmPassword = $_POST["confirm_password"] ?? "";
     
-    if(password_verify($_POST['password'], $hash_uit_db)){
-
-        echo "login ok";
-    }
+  
    
     
 # check if fields is empty 
@@ -29,8 +26,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
     }else {
         echo "Registration data is valid!";
         $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
-        $sql = "INSERT INTO users (username, email, password)"
-        
+        $sql = "INSERT INTO users (username, email, password)
+                VALUES (:username,:email, :password)";
+        $stmt = $pdo->prepare($sql);
+
         echo "Username: " .htmlspecialchars($username);
         echo "<p>Email: " .htmlspecialchars($email) . "</p>";
         echo "<p>hashpass: " .htmlspecialchars($password_hash) . "</p>";
